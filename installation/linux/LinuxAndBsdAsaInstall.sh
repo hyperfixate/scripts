@@ -5,13 +5,13 @@
 # This script is provided as-is, with no support or warranty expressed or implied, use at your own risk!
 
 # To install the ASA server agent, set the following value to true:
-INSTALL_SERVER_TOOLS=false
+INSTALL_SERVER_TOOLS=true
 
 # Except when using an AWS or GCP account/project linked with an ASA project, 
 # an enrollment token for the server agent is required.
 # If using an enrollment token, place the token in between the quotes in the  
 # following line:
-SERVER_ENROLLMENT_TOKEN=""
+SERVER_ENROLLMENT_TOKEN="eyJzIjoiYTNhYTFlNTgtMTBlZS00MGQ1LWI4M2EtNzU1N2NhNDE1NTNjIiwidSI6Imh0dHBzOi8vYWxsZWdpb24tcG9jLnBhbS5va3RhLmNvbSJ9"
 
 # To leverage ASA for machine to machine authentication, the ASA client tools are required.
 # To install the ASA client tools, set the following value to true:
@@ -40,7 +40,7 @@ PROXY_CHECK_ENABLED=true
 # supported. Therefore users create by the sftd agent will be normal users with no sudo rights.  Change
 # the below value to true to have this script automatically create agent lifecycle hooks that well
 # force all sftd created users to have full sudo rights, just like checking the admin box in the ASA UI.
-DEFAULT_TO_ADMIN=false
+DEFAULT_TO_ADMIN=true
 
 # By default, this script will not reinstall the current version of the ASA agents.  Change the below
 # value to "true" to force reinstallation.
